@@ -1,0 +1,49 @@
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: dodgerblue;
+    }
+    .types-wrapper {
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    .types-offroad-wrapper{
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    body {
+        background-color: darkslategrey;
+    }
+    .types-offroad-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .types-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .types-offroad:nth-child(1){
+        grid-column: 2/3;
+    }
+    .types-offroad:nth-child(2){
+        grid-column: 1/2;
+    }
+    .types:nth-child(4){
+        grid-column: 2/3;
+    }
+    .toys-offroad img {
+        width: 400px;
+        height: 200px;
+    }
+    .toys img {
+        width: 400px;
+        height: 200px;
+    }
+    .toys-offroad {
+        width: 430px;
+    }
+    .toys {
+        width: 430px;
+    }
+}

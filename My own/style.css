@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: darkcyan;
+    color: white;
+}
+
+.banner {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+}
+.banner img {
+    width: 110px;
+    border: black 5px solid;
+    border-radius: 8px;
+}
+nav {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 80px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+nav a:nth-child(4) {
+    grid-column: 2/3;
+    color: dodgerblue;
+}
+nav a:nth-child(1) {
+    color: crimson;
+}
+nav a:nth-child(2) {
+    color:greenyellow;
+}
+nav a:nth-child(3) {
+    color: aquamarine;
+}
+.banner nav a:hover {
+    text-decoration: underline;
+}
+.section-title {
+    text-align: center;
+}
+
+.thumbnail {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+
+    border-radius: 16px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    transition: all 500ms;
+}
+.content {
+    height: 400px;
+  
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  
+}
+
+.thumbnail img{
+    width: 300px;
+}
+.thumbnail button{
+    width: 125px;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+.thumbnail:hover{
+    transform: scale(1.10);
+    background-color: azure;
+    color: lawngreen;
+    background-image: url(./img/Mountain\ 3.webp);
+    background-repeat: none;
+    object-fit: cover;
+}
+.thumbnail:hover button {
+    background-color: black;
+}
+.types-wrapper {
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+.types img {
+    width: 270px;
+    height: 150px;
+}
+.types {
+    color: black;
+    padding: 15px;
+    background-color: rgba(251, 251, 251, 0.521);
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+
+    display: grid;
+    gap: 15px;
+}
+.types-offroad-wrapper {
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+.types-offroad img {
+    width: 270px;
+    height: 150px;
+}
+.types-offroad {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.245);
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+
+    display: grid;
+    gap: 15px;
+}
+.toys-wrapper {
+    padding: 15px;
+
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.toys img {
+    width: 220px;
+    height: 100px;
+}
+.toys {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.245);
+    width: 250px;
+    text-align: center;
+    border-radius: 16px;
+
+    display: grid;
+    gap: 10px;
+}
+
+.toys-offroad-wrapper {
+    padding: 15px;
+
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.toys-offroad img {
+    width: 220px;
+    height: 100px;
+}
+.toys-offroad {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.499);
+    width: 250px;
+    text-align: center;
+    border-radius: 16px;
+    color: black;
+
+    display: grid;
+    gap: 10px;
+}
+label {
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    justify-items: center;
+}
+input {
+    width: 420px;
+    border-radius: 5px ;
+    height: 40px;
+    background-color: chartreuse;
+    color: darkcyan;
+}   
+footer {
+    font-size: 32px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.245);
+}
+label button {
+    width: 420px;
+    height: 40px;
+    font-size: 32px;
+    background-color: brown;
+    border-radius: 12px 10px 5px 2px;
+    color: white;
+}
